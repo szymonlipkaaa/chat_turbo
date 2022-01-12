@@ -1,0 +1,7 @@
+<p style="color: green"><%= notice %></p>
+
+<%= turbo_frame_tag @message do %>
+  <p><%= @message.content %></p>
+
+  <%= link_to 'Edit this todo', edit_message_path(@message) %>
+<% end %>
